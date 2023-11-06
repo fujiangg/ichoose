@@ -875,10 +875,10 @@ pre code {
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+   display: flex; 
+   flex-wrap: wrap;
+  /* margin-right: -15px; */
+  /* margin-left: -15px;  */ */
 }
 
 .no-gutters {
@@ -10072,6 +10072,23 @@ h6,
   border-radius: 45px;
 }
 
+.imgabout {
+  width: 200px;
+  height: 300px;
+  margin-left: 0px;
+
+}
+
+.imgaboutdua {
+  width: 200px;
+  height: 300px;
+  margin-left: 5px;
+}
+
+.fontmini{
+  font-size: 10px;
+}
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -10463,6 +10480,38 @@ h6,
 
   imghelp {
    margin-right:100px;
+}
+
+@media (min-width: 576px) {
+  .blog-item .row {
+      height: 300px;
+  }
+}
+
+.blog-item a i {
+  position: relative;
+  padding-left: 20px;
+  transition: .3s;
+}
+
+.blog-item a:hover i {
+  padding-left: 50px;
+}
+
+.blog-item a i::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  top: 50%;
+  left: 10px;
+  margin-top: -1px;
+  background: var(--primary);
+  transition: .3s;
+}
+
+.blog-item a:hover i::after {
+  width: 50px;
 }
 
 
