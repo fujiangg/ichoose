@@ -5,7 +5,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -61,7 +61,7 @@ body {
   line-height: 1.5;
   color: #555555;
   text-align: left;
-  background-color: #F3F6FF;
+  background-color: #FFFEE0  ;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -261,12 +261,6 @@ select {
   word-wrap: normal;
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -328,10 +322,7 @@ progress {
   height: auto;
 }
 
-[type="search"] {
-  outline-offset: -2px;
-  -webkit-appearance: none;
-}
+
 
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -3555,15 +3546,6 @@ input[type="button"].btn-block {
   border-bottom-left-radius: 0;
 }
 
-.custom-control {
-  position: relative;
-  z-index: 1;
-  display: block;
-  min-height: 1.5rem;
-  padding-left: 1.5rem;
-  color-adjust: exact;
-}
-
 .custom-control-inline {
   display: inline-flex;
   margin-right: 1rem;
@@ -6355,7 +6337,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #F195B2 !important;
+  background-color: #F195B2  !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9796,7 +9778,7 @@ h6,
   .navbar-light {
     border-radius: 60px;
   }
-  #header-carousel,
+  #home,
   .page-header {
     margin-top: -45px;
   }
@@ -10143,4 +10125,12 @@ h6,
   .footer .border-right {
     border-right: none !important;
   }
+
+  imghelp {
+   margin-right:100px;
+}
+
+
+
+
 }
