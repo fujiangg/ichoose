@@ -53,7 +53,7 @@
     // Service and team carousel
     $(".service-carousel, .team-carousel").owlCarousel({
         autoplay: false,
-        smartSpeed: 1500,
+        // smartSpeed: 1500,
         margin: 30,
         dots: false,
         loop: true,
@@ -82,7 +82,7 @@
     // Product carousel
     $(".product-carousel").owlCarousel({
         autoplay: false,
-        smartSpeed: 1500,
+        // smartSpeed: 1500,
         margin: 30,
         dots: false,
         loop: true,
@@ -121,6 +121,13 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
+    $('#portfolio-flter div').on('click', function () {
+        $("#portfolio-flter div").removeClass('active');
+        $(this).addClass('active');
+
+        portfolioIsotope.isotope({filter: $(this).data('filter')});
+    });
+
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -132,4 +139,5 @@
     });
     
 })(jQuery);
+
 
