@@ -4273,97 +4273,6 @@ input[type="button"].btn-block {
   }
 }
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-}
-
-.nav-link:hover, .nav-link:focus {
-  text-decoration: none;
-}
-
-.nav-link.disabled {
-  color: #6c757d;
-  pointer-events: none;
-  cursor: default;
-}
-
-.nav-tabs {
-  border-bottom: 1px solid #dee2e6;
-}
-
-.nav-tabs .nav-item {
-  margin-bottom: -1px;
-}
-
-.nav-tabs .nav-link {
-  border: 1px solid transparent;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
-}
-
-.nav-tabs .nav-link.disabled {
-  color: #6c757d;
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #F3F6FF;
-  border-color: #dee2e6 #dee2e6 #F3F6FF;
-}
-
-.nav-tabs .dropdown-menu {
-  margin-top: -1px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.nav-pills .nav-link {
-  border-radius: 5px;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #F195B2;
-}
-
-.nav-fill > .nav-link,
-.nav-fill .nav-item {
-  flex: 1 1 auto;
-  text-align: center;
-}
-
-.nav-justified > .nav-link,
-.nav-justified .nav-item {
-  flex-basis: 0;
-  flex-grow: 1;
-  text-align: center;
-}
-
-.tab-content > .tab-pane {
-  display: none;
-}
-
-.tab-content > .active {
-  display: block;
-}
-
 .navbar {
   position: relative;
   display: flex;
@@ -4726,6 +4635,11 @@ input[type="button"].btn-block {
 
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
+}
+
+.navbar .btn:hover {
+  color: #FFFFFF !important;
+  background: var(--primary) !important;
 }
 
 .card {
@@ -10071,38 +9985,239 @@ h6,
   border-radius: 45px;
 }
 
+/* BUAT ABOUT US */
+
+.cardsizefuji{
+  width: 450px;
+  margin-right:10px;
+  margin-bottom: 20px;
+ 
+
+}
+.cardsizebila{
+  width: 450px;
+  margin-left:10px;
+  margin-right: 12px;
+}
 .imgabout {
-  width: 200px;
-  height: 230px;
-  margin-left: 0px;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
-
+  border-radius: 25px;
+  max-width: 160px;
+  height: auto;
+  margin-left: 92px;
+  transition: transform 0.3s ease-in-out; /* Menambahkan efek transisi pada transformasi (0.3 detik) */
 }
 
-.imgaboutdua {
-  width: 200px;
-  height: 300px;
-  margin-left: 5px;
+.imgabout:hover {
+  transform: scale(1.2); /* Mengubah skala gambar saat kursor mouse mengarah ke gambar */
 }
 
-.fontmini{
-  font-size: 12px;
-  text-align:justify;
-  padding-right: 15px;
-  font-family:'Franklin Gothic Medium';
+article {
+  margin-bottom: 3rem;
+  position: relative;
+  zoom: 1;
+}
+
+article:before, article:after {
+  content: "";
+  display: table;
+}
+
+article:after { clear: both }
+
+
+article section:first-of-type {
+  float: right;
+  width: 62.5%;
+}
+
+article section:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+
+input[type=checkbox] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+[for="read_more"] {
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .65rem;
+  border-radius: 25px;
+  border: 2px solid #F195B2;
+}
+
+[for="read_more"]:hover {
+  background: #F195B2;
   color: #000;
+  border: 1px solid #000;
+  
 }
 
-.fontminidua{
-  font-size: 12px;
-  text-align:justify;
-  padding-right: 40px;
-  font-family:'Franklin Gothic Medium';
+[for="read_more"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+  display: block;
+  visibility: visible;
+  width: 100%;
+}
+
+/* input[type=checkbox]:checked ~ figure { width: 100% } */
+
+input[type=checkbox]:checked ~ [for="read_more"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+
+.fontreadmore{
+  text-align: justify;
+  font-size: 15px;
+  font-family:'Trebuchet MS';
+}
+articledua {
+  margin-bottom: 3rem;
+  position: relative;
+  zoom: 1;
+}
+
+article:before, article:after {
+  content: "";
+  display: table;
+}
+
+article:after { clear: both }
+
+
+article section:first-of-type {
+  float: right;
+  width: 62.5%;
+}
+
+article section:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+sectiondua {
+  -webkit-transition: .125s linear;
+  -moz-transition: .125s linear;
+  -ms-transition: .125s linear;
+  -o-transition: .125s linear;
+  transition: .125s linear;
+}
+
+input[type=checkbox] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+[for="read_moredua"] {
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .65rem;
+  border-radius: 25px;
+  border: 1px solid #F195B2;
+  color: #F195B2;
+  
+  
+}
+
+[for="read_moredua"]:hover {
+  background: #F195B2;
   color: #000;
+  border: 1px solid #000;
+  
 }
 
+[for="read_moredua"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+  display: block;
+  visibility: visible;
+  width: 100%;
+}
+/* 
+input[type=checkbox]:checked ~ figure { width: 100% } */
+
+input[type=checkbox]:checked ~ [for="read_moredua"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="read_moredua"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+
+
+
+/*** Service ***/
+.service-itemdua {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 2px solid #F195B2;
+  box-shadow: 0 1px 2px #F195B2; 
+}
+
+.service-itemdua::after {
+  /* position: absolute; 
+  content: ""; */
+  width: 0;
+  height: 0;
+  top: -80px;
+  right: -80px;
+  border: 80px solid;
+  transform: rotate(45deg);
+  opacity: 1;
+  transition: .5s;
+  
+}
+
+.service-itemdua.bg-white::after {
+  border-color: #FFFEE0;
+
+  
+} 
+
+.service-itemdua.bg-light::after {
+  border-color: transparent transparent #FFFFFF transparent;
+}
+
+.service-itemdua:hover::after {
+  opacity: 0;
+}
 
 
 .back-to-top {
@@ -10477,7 +10592,6 @@ h6,
   left: -5px;
   border: 2px solid #F195B2;
   border-radius: 20px;
-}
 
 .testimonial-carousel .owl-dot.active {
   background: #62C3E7;
@@ -10533,4 +10647,5 @@ h6,
 
 
 
+}
 }
