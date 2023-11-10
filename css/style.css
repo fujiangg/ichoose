@@ -2973,8 +2973,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-  color: #62C3E7;
-  border-color: #62C3E7;
+  color: #000;
+
+  
 }
 
 .btn-outline-secondary:hover {
@@ -9985,6 +9986,42 @@ h6,
   border-radius: 45px;
 }
 
+/* BUAT CONTACT */
+/*** Contact ***/
+.contact .btn-square {
+  width: 100px;
+  height: 100px;
+  border: 20px solid var(--light);
+  background: var(--primary);
+  border-radius: 50px;
+}
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+
 /* BUAT ABOUT US */
 
 .cardsizefuji{
@@ -10055,7 +10092,8 @@ input[type=checkbox] {
   text-align: center;
   padding: .65rem;
   border-radius: 25px;
-  border: 2px solid #F195B2;
+  border: 1px solid #F195B2;
+  color: #F195B2;
 }
 
 [for="read_more"]:hover {
@@ -10433,6 +10471,17 @@ input[type=checkbox]:checked ~ [for="read_moredua"] span:last-of-type {
   justify-content: center;
   border-radius: 150px;
   z-index: 1;
+}
+
+/* UNTUK SKIN TYPE */
+.cardskintype{
+  border-radius: 16px;
+  background-color: #fff;
+  text-align: center;
+  border: 2px solid #F195B2;
+  box-shadow: 0 1px 2px #F195B2; 
+  
+
 }
 
 .service-item .service-img::before {
