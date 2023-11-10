@@ -10020,8 +10020,15 @@ h6,
   width: 100px;
   height: 100px;
   border: 20px solid var(--light);
-  background: var(--primary);
+  background:  var(--primary);
   border-radius: 50px;
+  box-shadow: 0 3px 4px #F195B2; 
+  
+}
+
+
+.fontcontact{
+  font-size: 20px;
 }
 
 .btn-square {
@@ -10048,6 +10055,7 @@ h6,
   justify-content: center;
   font-weight: normal;
 }
+
 
 
 /* BUAT ABOUT US */
